@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ToDo Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        body{
+            background: linear-gradient(rgb(238, 45, 45), rgb(231, 231, 104), white) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .container{
+            margin: 5rem auto;
+            max-width: 25rem;
+            width: 100%;
+            background: #f6eec9;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+        .header{
+            text-align: center;
+        }
+        .content{
+            text-align: center;
+        }
+        input, button{
+            border-radius: 0.3rem;
+            border: none;
+        }
+        input{
+            background-color: rgb(219, 215, 215);
+            padding: 0.2rem 0.6rem;
+        }
+        #btnAdd{
+            background-color: green;
+            color: white;
+            font-weight: bolder;
+            padding: 0.2rem 0.6rem;
+        }
+        #btnAdd:hover{
+            background-color: greenyellow;
+            color: black;
+            font-weight: bolder;
+            padding: 0.2rem 0.6rem;
+            cursor: pointer;
+        }
+        .allList li{
+            display: flex;
+            justify-content: space-between;
+            margin: 0.2rem auto;
+            background-color: rgb(219, 215, 215);
+            border-radius: 0.3rem;
+        }
+        .allList li button{
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+        }
+        #delButton:hover{
+            background-color: rgb(235, 117, 117);
+            color: black;
+            font-weight: bolder;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Todo List</h1>
+        </div>
+        <div class="content">
+            <input type="text" placeholder="✍(◔◡◔)" id="inputField">
+            <button id="btnAdd">+</button>
+
+            <div class="allList">
+                <ul id="toDoList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
